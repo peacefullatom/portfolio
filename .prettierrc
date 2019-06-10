@@ -1,0 +1,14 @@
+{
+  "tabWidth": 2,
+  "singleQuote": true,
+  "printWidth": 140,
+  "htmlWhitespaceSensitivity": "css",
+  "overrides": [
+    { "files": ["*.json", ".*rc"], "options": { "parser": "json" } },
+    { "files": "*.html", "options": { "parser": "html" } },
+    { "files": "*.css,", "options": { "parser": "css" } },
+    { "files": "*.scss", "options": { "parser": "scss" } },
+    { "files": "*.less", "options": { "parser": "less" } },
+    { "files": ["*.ts", "*.tsx"], "options": { "parser": "typescript", "jsxSingleQuote": true } }
+  ]
+}

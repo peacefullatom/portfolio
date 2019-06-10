@@ -1,0 +1,60 @@
+$transition: background-color 0.5s;
+$borderRadius: 4px;
+$background: rgba(0, 191, 255, 0.1);
+
+%active {
+  background-color: deepskyblue;
+  transition: $transition;
+}
+
+%element {
+  background-color: $background;
+  border-radius: $borderRadius;
+  transition: $transition;
+}
+
+.digitalClock {
+  &__digit {
+    margin: 4px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+    &_wide {
+      justify-content: space-between;
+    }
+
+    &_dense {
+      justify-content: space-around;
+    }
+  }
+
+  &__dot {
+    @extend %element;
+    padding: 2px;
+
+    &#{&}_active {
+      @extend %active;
+    }
+  }
+
+  &__bar {
+    @extend %element;
+
+    &#{&}_active {
+      @extend %active;
+    }
+
+    &_vertical {
+      padding: 10px 2px;
+      margin: 2px 0;
+    }
+
+    &_horizontal {
+      padding: 2px 8px;
+      margin: 0 2px;
+    }
+  }
+}

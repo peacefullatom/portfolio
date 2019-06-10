@@ -1,0 +1,28 @@
+$transition: background-color 0.5s, border-left 0.5s, border-top 0.5s, box-shadow 0.5s;
+$borderLightBlue: 1px solid lightblue;
+$borderDimgrey: 1px solid dimgrey;
+
+.binaryClock {
+  &__block {
+    flex-direction: column;
+  }
+
+  &__item {
+    background-color: white;
+    border-left: $borderLightBlue;
+    border-radius: 4px;
+    border-top: $borderLightBlue;
+    box-shadow: 1px 1px 1px blue;
+    margin: 5px;
+    padding: 12px;
+    transition: $transition;
+
+    &_active {
+      background-color: deepskyblue;
+      border-left: $borderDimgrey;
+      border-top: $borderDimgrey;
+      box-shadow: 1px 1px 1px lightcyan;
+      transition: $transition;
+    }
+  }
+}

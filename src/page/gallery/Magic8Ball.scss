@@ -1,0 +1,63 @@
+$transitionBackgroundColor: background-color 0.5s;
+$transitionBorderRadius: border-radius 0.5s;
+
+.magic8ball {
+  &__container {
+    align-items: center;
+    background-image: url(./asset/Magic_eight_ball.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    height: 290px;
+    justify-content: center;
+    user-select: none;
+    width: 290px;
+  }
+
+  &__label {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    transition: color 1s;
+    width: 100px;
+    z-index: 1;
+  }
+}
+
+.charger {
+  &__row {
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 6px;
+    margin: 2px;
+    transition: $transitionBorderRadius, $transitionBackgroundColor;
+
+    &#{&}_active {
+      border-radius: 50%;
+      transition: $transitionBorderRadius;
+    }
+
+    &#{&}_lightgreen {
+      background-color: lightgreen;
+      transition: $transitionBackgroundColor;
+    }
+
+    &#{&}_yellow {
+      background-color: yellow;
+      transition: $transitionBackgroundColor;
+    }
+
+    &#{&}_red {
+      background-color: red;
+      transition: $transitionBackgroundColor;
+    }
+
+    &#{&}_black {
+      background-color: black;
+      transition: $transitionBackgroundColor;
+    }
+  }
+}

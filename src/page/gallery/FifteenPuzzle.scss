@@ -1,0 +1,35 @@
+$transition: border 0.5s, color 0.5s, background-color 0.5s;
+
+.fifteenPuzzle {
+  flex-wrap: wrap;
+  user-select: none;
+  width: 280px;
+
+  &__tile {
+    border-radius: 4px;
+    border: 2px solid gainsboro;
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    text-align: center;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    transition: $transition;
+
+    &#{&}_correct {
+      color: lightgreen;
+      transition: $transition;
+    }
+
+    &#{&}_movable {
+      cursor: pointer;
+      border: 2px solid skyblue;
+      transition: $transition;
+
+      &:hover {
+        background-color: rgba(127, 127, 127, 0.25);
+      }
+    }
+  }
+}
