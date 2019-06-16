@@ -3,10 +3,11 @@ import Experience from './about/Experience';
 import Me from './about/Me';
 import Readings from './about/Readings';
 import Skills from './about/Skills';
+import { pageBaseClassName } from './const';
 
 const About: React.FC = () => {
   return (
-    <div className=''>
+    <div className={pageBaseClassName}>
       <Me />
       <hr></hr>
       <Skills />
