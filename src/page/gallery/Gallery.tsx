@@ -1,8 +1,8 @@
 import React from 'react';
 import { Redirect, Route, RouteComponentProps, Switch } from 'react-router';
 import { NavLink } from 'react-router-dom';
-import { pageBaseClassName } from './const';
-import { navGallery, navGalleryRedirect } from './Gallery.const';
+import { pageBaseClassName } from '../const';
+import { navGallery, navGalleryRedirect } from './const';
 
 const Gallery: React.FC<RouteComponentProps> = ({ match }: RouteComponentProps) => {
   return (

@@ -1,7 +1,7 @@
-import About from 'page/About';
-import Contact from 'page/Contact';
-import Gallery from 'page/Gallery';
-import Intro from 'page/Intro';
+import About from 'page/about/About';
+import Contact from 'page/contact/Contact';
+import Gallery from 'page/gallery/Gallery';
+import Intro from 'page/intro/Intro';
 import { ILink } from 'types';
 
 export const defaultLink: ILink = { path: '/', label: 'Intro', component: Intro };

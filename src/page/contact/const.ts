@@ -1,6 +1,6 @@
 import { faGithub, faInstagram, faLinkedin, faSkype, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
-import { IContact } from './Contact.types';
+import { IContact } from './types';
 
 export const contactLinkMail = 'mail';
 export const contactLinkHref = 'href';

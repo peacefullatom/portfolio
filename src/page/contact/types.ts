@@ -1,5 +1,5 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { ContactLink } from './Contact.const';
+import { ContactLink } from './const';
 
 export interface IContactLink {
   value: string;

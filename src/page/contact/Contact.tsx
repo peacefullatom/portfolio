@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { pageBaseClassName } from './const';
-import { contactLinkMail, contactList } from './Contact.const';
+import { pageBaseClassName } from '../const';
+import { contactLinkMail, contactList } from './const';
 import './Contact.scss';
-import { IContact, IContactLink } from './Contact.types';
+import { IContact, IContactLink } from './types';
 
 const contactLink = (props: IContactLink): string => (props.type === contactLinkMail ? 'mailto:' : '') + props.value;
 

@@ -1,4 +1,8 @@
 import React from 'react';
+import BinaryClock from './BinaryClock';
+import DigitalClock from './DigitalClock';
+import FifteenPuzzle from './FifteenPuzzle';
+import Magic8Ball from './Magic8Ball';
 
 export const galleryDescription = (value: string[]): JSX.Element => {
   return (
@@ -35,4 +39,14 @@ export const galleryDescriptionFifteenPuzzle = [
   `The Fifteen Puzzle is a classic board game.`,
   `All you need to do is to place the tiles in ascending order.`,
   `You have unlimited moves and time to solve the puzzle, however, if you got stuck you can always restart the game using the reset button.`
+];
+
+export const navGalleryBinaryClock = 'binary-clock';
+export const navGalleryRedirect = navGalleryBinaryClock;
+
+export const navGallery = [
+  { path: navGalleryBinaryClock, label: 'Binary clock', component: BinaryClock },
+  { path: 'digital-clock', label: 'Digital clock', component: DigitalClock },
+  { path: 'magic-8-ball', label: 'Magic 8 ball', component: Magic8Ball },
+  { path: 'fifteen-puzzle', label: 'Fifteen puzzle', component: FifteenPuzzle }
 ];

@@ -1,9 +1,9 @@
 import React from 'react';
-import Experience from './about/Experience';
-import Me from './about/Me';
-import Readings from './about/Readings';
-import Skills from './about/Skills';
-import { pageBaseClassName } from './const';
+import Experience from './Experience';
+import Me from './Me';
+import Readings from './Readings';
+import Skills from './Skills';
+import { pageBaseClassName } from '../const';
 
 const About: React.FC = () => {
   return (
