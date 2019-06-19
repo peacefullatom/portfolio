@@ -1,4 +1,17 @@
+$color: rgba(109, 157, 215, 0.8);
+$background: #ffffff;
+$size: 20px;
+$position: -$size / 2;
+
 .tree {
+  &__stem {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: $color;
+    left: 50%;
+  }
+
   &__block {
     position: relative;
     margin-top: 14px;
@@ -9,19 +22,57 @@
     margin-top: -30px;
   }
 
+  &__branch {
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    top: 10px;
+    background: $color;
+  }
+
+  &_right &__branch {
+    right: 0px;
+  }
+
+  &_left &__branch {
+    left: 0px;
+  }
+
+  &__joint {
+    position: absolute;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    border: 1px solid $color;
+    top: $position;
+    background: $background;
+    box-sizing: content-box;
+  }
+
+  &_right &__joint {
+    left: $position;
+  }
+
+  &_left &__joint {
+    right: $position;
+  }
+
+  &__content {
+    position: relative;
+    width: 42%;
+    border: 1px solid $color;
+    border-radius: 4px;
+    padding: 10px;
+    background: $background;
+    z-index: 1;
+  }
+
   &_left &__content {
     margin-right: auto;
   }
 
   &_right &__content {
     margin-left: auto;
-  }
-
-  &__content {
-    width: 42%;
-    border: 1px solid rgba(109, 157, 215, 0.8);
-    border-radius: 4px;
-    padding: 10px;
   }
 
   &__date {

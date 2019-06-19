@@ -15,6 +15,9 @@ const TreeOfLifeBlock: React.FC<ITreeOfLifeItem> = props => {
 
   return (
     <div className={`${block} ${position}`}>
+      <div className='tree__branch'>
+        <div className='tree__joint'></div>
+      </div>
       <div className={content}>
         <div className={date}>{date2str(props.date)}</div>
         {props.value}
@@ -25,7 +28,8 @@ const TreeOfLifeBlock: React.FC<ITreeOfLifeItem> = props => {
 
 const TreeOfLife: React.FC = () => {
   return (
-    <div className='my-3'>
+    <div className='position-relative my-3'>
+      <div className='tree__stem'></div>
       {introTreeOfLife
         .sort((a, b) => {
           if (a.date.getTime() > b.date.getTime()) {
