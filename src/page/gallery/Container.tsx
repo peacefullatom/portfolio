@@ -5,7 +5,7 @@ import { IGalleryContainerProps } from './types';
 const GalleryContainer: React.FC<IGalleryContainerProps> = props => {
   return (
     <div className='row'>
-      <div className='col d-flex'>{props.children}</div>
+      <div className='col d-flex my-3'>{props.children}</div>
       {galleryDescription(props.description)}
     </div>
   );

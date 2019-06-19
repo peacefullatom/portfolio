@@ -9,7 +9,9 @@ const SkillsBlock: React.FC<IAboutSkills> = props => {
       <div className='col-sm-6 col-md-3'>
         <h6>{props.title}</h6>
       </div>
-      <div className='col-sm-6 col-md-9'>{props.items.join(', ')}</div>
+      <div className='col-sm-6 col-md-9'>
+        <p>{props.items.join(', ')}</p>
+      </div>
     </div>
   );
 };
