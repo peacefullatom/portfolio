@@ -7,11 +7,12 @@ import { ILink } from 'types';
 import { IFooter } from './types';
 
 export const defaultLink: ILink = { path: '/', label: 'Intro', component: Intro };
+export const contactLink: ILink = { path: '/contact', label: 'Contact', component: Contact };
 
 export const baseLinks: ILink[] = [
   { path: '/gallery', label: 'Gallery', component: Gallery },
   { path: '/about', label: 'About', component: About },
-  { path: '/contact', label: 'Contact', component: Contact }
+  contactLink
 ];
 
 export const footerLinks: IFooter[] = [

@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { footerLinks } from './const';
+import { footerLinks, contactLink } from './const';
 import './Footer.scss';
 import { IFooter } from './types';
+import { NavLink } from 'react-router-dom';
 
 const FooterLink: React.FC<IFooter> = props => {
   return (
@@ -22,7 +23,9 @@ const Footer: React.FC = () => {
           <FooterLink key={key} {...link} />
         ))}
       </div>
-      <div>&copy; {year} Yuriy Markov</div>
+      <div>
+        &copy; {year} <NavLink to={contactLink.path}>Yuriy Markov</NavLink>
+      </div>
     </div>
   );
 };
