@@ -6,7 +6,7 @@ import Magic8Ball from './Magic8Ball';
 
 export const galleryDescription = (value: string[]): JSX.Element => {
   return (
-    <div className='col'>
+    <div className='col my-3'>
       {value.map((item, key) => (
         <div key={key}>{item}</div>
       ))}
