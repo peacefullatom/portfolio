@@ -1,3 +1,9 @@
+@import '../styles.scss';
+
 .footer {
   background-color: #f5f5f5;
+}
+
+.footer__icon {
+  color: $accentColor;
 }
